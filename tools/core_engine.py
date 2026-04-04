@@ -10,6 +10,14 @@ import subprocess
 from pathlib import Path
 from typing import List, Tuple
 
+# 设置标准输出编码为UTF-8，避免Windows控制台乱码
+import io
+if sys.stdout.encoding is None or sys.stdout.encoding.upper() not in ['UTF-8', 'UTF8']:
+    try:
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    except Exception:
+        pass  # 如果失败，继续使用默认编码
+
 # 支持的图片文件扩展名
 支持的图片扩展名 = ('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp', '.svg')
 
