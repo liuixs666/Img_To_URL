@@ -38,7 +38,7 @@ git branch -M main
 ### 3. 运行脚本
 ```bash
 cd tools
-python core_engine.py
+python imagetourl.py
 ```
 
 ## 文件结构
@@ -47,7 +47,7 @@ Img_To_URL/
 ├── images/          # 存放图片文件
 ├── output/          # 生成的Excel文件
 ├── tools/           # 工具脚本
-│   └── core_engine.py
+│   └── imagetourl.py
 ├── README.md        # 说明文档
 ├── requirements.txt # 依赖列表
 └── .git/            # Git仓库
