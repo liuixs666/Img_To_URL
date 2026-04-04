@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-core_engine.py - 图片转CDN链接生成器，带Git自动化功能
+imagetourl.py - 图片转CDN链接生成器，带Git自动化功能
 扫描images/文件夹，生成jsDelivr CDN链接，导出到Excel，并运行git命令。
 """
 
